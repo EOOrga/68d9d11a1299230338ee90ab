@@ -1,0 +1,33 @@
+{
+  "name": "ASS ANIMATION D YZEURE ET DU B",
+  "short_name": "ASS Ops",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#f6f8f5",
+  "theme_color": "#234a57",
+  "description": "Local operations workspace for resources, incidents, assets, and appointments.",
+  "icons": [
+    {
+      "src": "icons/Icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/Icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/Icon-maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icons/Icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

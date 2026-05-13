@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ASS ANIMATION D YZEURE ET DU B</title>
+  <meta name="description" content="Local operations app for resources, incidents, assets, and appointments.">
+  <link rel="icon" href="favicon.png">
+  <link rel="manifest" href="manifest.json">
+  <style>
+    :root {
+      --ink: #12323d;
+      --primary: #234a57;
+      --secondary: #b86a3e;
+      --green: #2f7d6b;
+      --paper: #f6f8f5;
+      --line: #d7e2dc;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.5;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .hero {
+      min-height: 86vh;
+      display: grid;
+      align-items: end;
+      padding: 24px;
+      color: var(--white);
+      background:
+        linear-gradient(90deg, rgba(18, 50, 61, 0.90), rgba(18, 50, 61, 0.64) 48%, rgba(18, 50, 61, 0.22)),
+        url("featured.png") center / cover no-repeat;
+    }
+
+    .hero-inner {
+      width: min(1120px, 100%);
+      margin: 0 auto;
+      padding: 72px 0 56px;
+    }
+
+    .eyebrow {
+      margin: 0 0 16px;
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0;
+      text-transform: uppercase;
+      color: #d7e8de;
+    }
+
+    h1 {
+      max-width: 760px;
+      margin: 0;
+      font-size: clamp(2.2rem, 7vw, 5.1rem);
+      line-height: 1.02;
+      letter-spacing: 0;
+    }
+
+    .hero p {
+      max-width: 670px;
+      margin: 20px 0 0;
+      font-size: clamp(1rem, 2vw, 1.25rem);
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 12px 18px;
+      border-radius: 8px;
+      font-weight: 800;
+      text-decoration: none;
+      background: var(--secondary);
+      color: var(--white);
+    }
+
+    .button.secondary {
+      background: rgba(255, 255, 255, 0.14);
+      border: 1px solid rgba(255, 255, 255, 0.38);
+    }
+
+    main section {
+      padding: 54px 24px;
+    }
+
+    .wrap {
+      width: min(1120px, 100%);
+      margin: 0 auto;
+    }
+
+    .section-title {
+      margin: 0 0 10px;
+      font-size: clamp(1.7rem, 4vw, 2.6rem);
+      line-height: 1.1;
+      letter-spacing: 0;
+    }
+
+    .section-copy {
+      max-width: 760px;
+      margin: 0 0 24px;
+      color: #3d5963;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+
+    .tile {
+      min-height: 180px;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--white);
+    }
+
+    .tile strong {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 1.05rem;
+    }
+
+    .band {
+      background: #e8efe8;
+    }
+
+    .workflow {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      align-items: center;
+    }
+
+    .phone-panel {
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--white);
+      box-shadow: 0 22px 55px rgba(18, 50, 61, 0.12);
+    }
+
+    .phone-row {
+      display: grid;
+      grid-template-columns: 44px 1fr auto;
+      gap: 12px;
+      align-items: center;
+      padding: 13px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .phone-row:last-child {
+      border-bottom: 0;
+    }
+
+    .dot {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: #d7e8de;
+      color: var(--primary);
+      font-weight: 900;
+    }
+
+    .pill {
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 800;
+      color: var(--secondary);
+      background: rgba(184, 106, 62, 0.13);
+    }
+
+    footer {
+      padding: 30px 24px;
+      color: #d7e8de;
+      background: var(--ink);
+    }
+
+    footer .wrap {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 840px) {
+      .grid,
+      .workflow {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        min-height: 82vh;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">Local Android operations workspace</p>
+      <h1>ASS ANIMATION D YZEURE ET DU B</h1>
+      <p>Coordinate resource allocation, incident response, asset tracking, and appointment booking from a focused phone app that stores records on the device.</p>
+      <div class="actions">
+        <a class="button" href="#workflow">View workflow</a>
+        <a class="button secondary" href="mailto:support@ass-animation-yzeure.fr">Contact support</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="wrap">
+        <h2 class="section-title">Built for routine operational control</h2>
+        <p class="section-copy">Teams can move from a daily dashboard into the exact area they need, create a local record, assign responsibility, and keep status visible without an account or server dependency.</p>
+        <div class="grid">
+          <article class="tile">
+            <strong>Resource allocation</strong>
+            <span>Reserve rooms, equipment, and team capacity with priority and target dates.</span>
+          </article>
+          <article class="tile">
+            <strong>Incident reporting</strong>
+            <span>Capture urgent issues with owner, location, notes, and clear status actions.</span>
+          </article>
+          <article class="tile">
+            <strong>Asset management</strong>
+            <span>Track checks, handovers, equipment returns, and follow-up responsibilities.</span>
+          </article>
+          <article class="tile">
+            <strong>Appointment booking</strong>
+            <span>Plan access handovers, room visits, and operational checkpoints.</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="band" id="workflow">
+      <div class="wrap workflow">
+        <div>
+          <h2 class="section-title">Local records, practical screens</h2>
+          <p class="section-copy">The app includes dashboard metrics, filtered requests, an asset board, an appointment timeline, detail actions, and privacy settings. Saved records remain local to the Android device.</p>
+          <a class="button" href="mailto:support@ass-animation-yzeure.fr">Request app support</a>
+        </div>
+        <div class="phone-panel" aria-label="Example operations list">
+          <div class="phone-row">
+            <div class="dot">1</div>
+            <div>
+              <strong>Resolve hall lighting incident</strong><br>
+              <span>Salle Bourbonnais</span>
+            </div>
+            <span class="pill">High</span>
+          </div>
+          <div class="phone-row">
+            <div class="dot">2</div>
+            <div>
+              <strong>Allocate chairs for workshop</strong><br>
+              <span>Storage A</span>
+            </div>
+            <span class="pill">Active</span>
+          </div>
+          <div class="phone-row">
+            <div class="dot">3</div>
+            <div>
+              <strong>Book access handover</strong><br>
+              <span>Front office</span>
+            </div>
+            <span class="pill">Planned</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>ASS ANIMATION D YZEURE ET DU BOURBONNAIS</span>
+      <a href="mailto:support@ass-animation-yzeure.fr">support@ass-animation-yzeure.fr</a>
+    </div>
+  </footer>
+</body>
+</html>

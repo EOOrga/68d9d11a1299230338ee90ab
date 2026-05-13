@@ -1,0 +1,15 @@
+App name
+ASS ANIMATION D YZEURE ET DU B
+
+Short description
+Coordinate resources, incidents, assets, and bookings in one local operations workspace.
+
+Full description
+ASS ANIMATION D YZEURE ET DU B helps daily teams organize operational requests without accounts, cloud sync, or external services. Staff can create local records for resource allocation, incident reporting, asset checks, and appointment booking.
+
+The app gives each record a workflow type, priority, owner, location, target date, notes, and status. Dashboard metrics, filtered request lists, asset views, booking timelines, and detail actions keep routine work easy to review on a phone.
+
+All saved information remains on the device, making the app suitable for focused internal coordination where simple local tracking is preferred.
+
+Category
+Business
