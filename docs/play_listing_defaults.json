@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "applications": {
+    "com.taziggg100.assopsyzeure": {
+      "title": "ASS ANIMATION D YZEURE ET DU B",
+      "short_description": "Coordinate resources, incidents, assets, and bookings in one local...",
+      "full_description": "ASS ANIMATION D YZEURE ET DU B helps daily teams organize operational requests without accounts, cloud sync, or external services. Staff can create local records for resource allocation, incident reporting, asset checks, and appointment booking.\n\nThe app gives each record a workflow type, priority, owner, location, target date, notes, and status. Dashboard metrics, filtered request lists, asset views, booking timelines, and detail actions keep routine work easy to review on a phone.\n\nAll saved information remains on the device, making the app suitable for focused internal coordination where simple local tracking is preferred.",
+      "source_screenshots": [
+        "docs/screens/1.png",
+        "docs/screens/2.png",
+        "docs/screens/3.png"
+      ],
+      "generated_from": "existing repository listing metadata and README",
+      "generated_at": "2026-10-02T21:27:32.240125+00:00"
+    }
+  }
+}
