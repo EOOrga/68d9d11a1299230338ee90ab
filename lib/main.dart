@@ -17,8 +17,8 @@ class AssOpsApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const primary = Color(0xFF234A57);
-    const secondary = Color(0xFFB86A3E);
+    const primary = Color(0xFF27D3F5);
+    const secondary = Color(0xFF27F5B0);
     const surface = Color(0xFFF6F8F5);
 
     final scheme =
@@ -327,7 +327,7 @@ class DashboardScreen extends StatelessWidget {
         ActionPanel(onCreate: onCreate),
         const SizedBox(height: 16),
         SectionHeader(
-          title: 'Priority attention',
+          title: 'ASS ANIMATION D YZEURE ET DU B',
           actionLabel: urgent.isEmpty ? null : '${urgent.length} active',
         ),
         if (urgent.isEmpty)
